@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.crossyroadbattery.crossyroadbattery.repository;
 
-import com.example.demo.domain.RentalInfo;
+import com.crossyroadbattery.crossyroadbattery.domain.RentalInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RentalInfoRepository extends JpaRepository<RentalInfo, Long> {

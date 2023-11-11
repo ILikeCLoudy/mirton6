@@ -1,6 +1,6 @@
-package com.example.demo.dto;
+package com.crossyroadbattery.crossyroadbattery.dto;
 
-import com.example.demo.domain.RentalInfo;
+import com.crossyroadbattery.crossyroadbattery.domain.RentalInfo;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

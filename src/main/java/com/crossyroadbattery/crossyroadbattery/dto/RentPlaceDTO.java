@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.crossyroadbattery.crossyroadbattery.dto;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package com.crossyroadbattery.crossyroadbattery.service;
 
-import com.example.demo.domain.RentPlace;
-import com.example.demo.dto.RentPlaceDTO;
-import com.example.demo.repository.RentPlaceRepository;
+import com.crossyroadbattery.crossyroadbattery.domain.RentPlace;
+import com.crossyroadbattery.crossyroadbattery.dto.RentPlaceDTO;
+import com.crossyroadbattery.crossyroadbattery.repository.RentPlaceRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,10 +1,10 @@
-package com.example.demo.controller;
+package com.crossyroadbattery.crossyroadbattery.controller;
 
-import com.example.demo.domain.RentPlace;
-import com.example.demo.domain.RentalInfo;
-import com.example.demo.dto.RentalInfoDTO;
-import com.example.demo.repository.RentPlaceRepository;
-import com.example.demo.service.RentalInfoService;
+import com.crossyroadbattery.crossyroadbattery.domain.RentPlace;
+import com.crossyroadbattery.crossyroadbattery.domain.RentalInfo;
+import com.crossyroadbattery.crossyroadbattery.dto.RentalInfoDTO;
+import com.crossyroadbattery.crossyroadbattery.repository.RentPlaceRepository;
+import com.crossyroadbattery.crossyroadbattery.service.RentalInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
