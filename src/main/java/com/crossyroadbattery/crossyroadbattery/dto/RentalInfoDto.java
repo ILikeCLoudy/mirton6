@@ -17,6 +17,7 @@ public class RentalInfoDto {
     private String location;
     private LocalDate startDate;
     private int quantity;
+    private int price;
 
     public RentalInfo toEntity(){
         LocalDate startDate = LocalDate.now(ZoneId.of("Asia/Seoul"));

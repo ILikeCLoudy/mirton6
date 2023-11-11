@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,15 +27,34 @@ public class MyPageService {
         List<RentalInfoDto> rentalInfoDtos = new ArrayList<>();
         RentalInfoDto rentalInfoDto;
         for(RentalInfo info : rentalInfos){
+            int price = calculatePrice(info);
             rentalInfoDto = new RentalInfoDto(
                     info.getId(),
                     info.getUserEmail(),
                     info.getLocation(),
                     info.getStartDate(),
-                    info.getQuantity()
+                    info.getQuantity(),
+                    price
             );
             rentalInfoDtos.add(rentalInfoDto);
         }
         return rentalInfoDtos;
+    }
+
+    private int calculatePrice(RentalInfo info) {
+        int price = 50;
+        int days = calculateDays(info.getStartDate());
+
+        return days*info.getQuantity()*price;
+    }
+
+    private int calculateDays(LocalDate startDate) {
+        if (startDate == null) {
+            return 0;
+        }
+
+        LocalDate currentDate = LocalDate.now();
+        long daysDiff = ChronoUnit.DAYS.between(startDate, currentDate);
+        return (int) daysDiff+1;
     }
 }

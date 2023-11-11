@@ -26,7 +26,7 @@ public class RentPlaceService {
                             .address((v.getAddress()))
                             .xMap(v.getXMap())
                             .yMap(v.getYMap())
-                            .numOfRemain(v.getNumOfRemain())
+                            .numOfRemain(v.getRemaning())
                             .build());
         });
         return res;

@@ -27,7 +27,7 @@ public class RentPlace {
     private String address;
     private double xMap;
     private double yMap;
-    private int numOfRemain;
+    private int remaning;
 
 
 }

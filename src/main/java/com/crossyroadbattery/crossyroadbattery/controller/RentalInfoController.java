@@ -24,7 +24,7 @@ public class RentalInfoController {
     @PostMapping("/api/rent/{placeId}")
     public ResponseEntity rent(@PathVariable Long placeId, @RequestBody RentalInfoDto rentalInfoDTO){
         RentPlace rentPlace = rentPlaceRepository.findById(placeId).orElse(null);
-        if(rentPlace.getNumOfRemain() < rentalInfoDTO.getQuantity()){
+        if(rentPlace.getRemaning() < rentalInfoDTO.getQuantity()){
             return ResponseEntity.status(null).body("대여 수량이 대여소에 존재하는 배터리 갯수보다 많습니다.");
         }
         RentalInfo rentalInfo = rentalInfoService.rentBattery(rentalInfoDTO);
