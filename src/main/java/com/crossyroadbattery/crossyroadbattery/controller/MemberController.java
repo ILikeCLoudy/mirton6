@@ -1,11 +1,13 @@
 package com.crossyroadbattery.crossyroadbattery.controller;
 
+import com.crossyroadbattery.crossyroadbattery.dto.MemberDTO;
+import com.crossyroadbattery.crossyroadbattery.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpSession;
 import java.lang.reflect.Member;
 import java.util.List;
 

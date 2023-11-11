@@ -1,7 +1,11 @@
 package com.crossyroadbattery.crossyroadbattery.service;
 
+import com.crossyroadbattery.crossyroadbattery.domain.MemberEntity;
+import com.crossyroadbattery.crossyroadbattery.dto.MemberDTO;
+import com.crossyroadbattery.crossyroadbattery.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
 
 import java.util.ArrayList;
 import java.util.List;

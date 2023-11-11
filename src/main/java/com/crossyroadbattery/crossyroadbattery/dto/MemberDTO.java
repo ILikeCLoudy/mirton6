@@ -1,5 +1,5 @@
 package com.crossyroadbattery.crossyroadbattery.dto;
-import com.crossyroadbattery.crossyroadbattery.entity.MemberEntity;
+import com.crossyroadbattery.crossyroadbattery.domain.MemberEntity;
 import lombok.*;
 
 @Getter
