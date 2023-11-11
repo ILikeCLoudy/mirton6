@@ -1,19 +1,14 @@
-package com.example.demo.domain.controller;
+package com.example.demo.controller;
 
 import com.example.demo.domain.RentPlace;
 import com.example.demo.domain.RentalInfo;
-import com.example.demo.domain.dto.RentPlaceDTO;
-import com.example.demo.domain.dto.RentalInfoDTO;
-import com.example.demo.domain.repository.RentPlaceRepository;
-import com.example.demo.domain.service.RentPlaceService;
-import com.example.demo.domain.service.RentalInfoService;
+import com.example.demo.dto.RentalInfoDTO;
+import com.example.demo.repository.RentPlaceRepository;
+import com.example.demo.service.RentalInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class RentalInfoController {

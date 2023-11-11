@@ -1,4 +1,4 @@
-package com.example.demo.domain.dto;
+package com.example.demo.dto;
 
 import com.example.demo.domain.RentalInfo;
 import lombok.Getter;

@@ -1,8 +1,8 @@
-package com.example.demo.domain.service;
+package com.example.demo.service;
 
 import com.example.demo.domain.RentalInfo;
-import com.example.demo.domain.dto.RentalInfoDTO;
-import com.example.demo.domain.repository.RentalInfoRepository;
+import com.example.demo.dto.RentalInfoDTO;
+import com.example.demo.repository.RentalInfoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
