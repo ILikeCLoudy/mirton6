@@ -1,12 +1,16 @@
 package com.crossyroadbattery.crossyroadbattery.domain;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
+import java.time.LocalDate;
+
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Getter
 @Setter
+@Builder
 @Table(name = "rental_info")
 public class RentalInfo {
     @Id
@@ -17,7 +21,7 @@ public class RentalInfo {
 
     private String location;
 
-    private String startDate;
+    private LocalDate startDate;
 
     private int quantity;
 }
